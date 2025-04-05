@@ -20,8 +20,13 @@ public class AnimationView : MonoBehaviour
     }
     public void Hide()
     {
+        StopAnimation();
         this.gameObject.SetActive(false);
 
+    }
+    public void StopAnimation()
+    {
+        animator.StopPlayback();
     }
 
 }
