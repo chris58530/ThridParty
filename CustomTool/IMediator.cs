@@ -10,10 +10,12 @@ public class IMediator
         listener.RegisterListener(this);
     }
 
-    public virtual void Register(IView view) { }
+    public virtual void Register(IView view) { 
+
+    }
     public virtual void DeRegister(IView view)
     {
-
+        
     }
 
 }

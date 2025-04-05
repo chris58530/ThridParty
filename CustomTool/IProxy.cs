@@ -2,7 +2,8 @@ using Zenject;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-public class IProxy
+using UnityEngine;
+public class IProxy : ScriptableObject
 {
     [Inject] protected Listener listener;
 
