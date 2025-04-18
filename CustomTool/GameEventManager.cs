@@ -59,7 +59,6 @@ public class Listener
         if (eventHandlers.TryGetValue(eventName, out var handler) && handler != null)
         {
             handler.Invoke();
-            LogService.Instance.Log($"Invoke {eventName}");
 
         }
         else
@@ -72,7 +71,6 @@ public class Listener
     public void ClearAllListeners()
     {
         eventHandlers.Clear();
-        Console.WriteLine("[信息] 所有事件處理器已清空！");
     }
 
 }
